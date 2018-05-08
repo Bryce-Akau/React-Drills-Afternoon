@@ -10,6 +10,7 @@ class App extends Component {
       list: [],
       input: ''
     }
+
     this.handleAddTask = this.handleAddTask.bind( this )
 
   }
@@ -37,7 +38,7 @@ class App extends Component {
         <div>
           <input value= {this.state.input}
             placeholder='Enter new task'
-            onChange= {(e) => this.handleInputChange( e.target.val)}
+            onChange= {(e) => this.handleInputChange( e.target.value)}
           />
             <button onClick = { this.handleAddTask }>Add</button>
         </div>
